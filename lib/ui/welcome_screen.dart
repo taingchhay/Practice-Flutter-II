@@ -12,16 +12,12 @@ class WelcomeScreen extends StatelessWidget {
         title: const Text(
           'Hello Flutter',
           style: TextStyle(color: Colors.white, fontSize: 20),
-          
         ),
       ),
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [
-              Color(0xFF186323),
-              Color(0xFF001964),
-            ],
+            colors: [Color(0xFF186323), Color(0xFF001964)],
           ),
         ),
 
@@ -29,27 +25,25 @@ class WelcomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-            const Text(
-            'Welcome to my first Flutter Project',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
+              const Text(
+                'Welcome to my first Flutter Project',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
 
-            const SizedBox(height: 50),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context, 
-                  MaterialPageRoute(
-                    builder: (context) => const SignUp(),
-                  ),
-                );
-              },
-              child: const Text('Get Started'),
-             ),
+              const SizedBox(height: 50),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const SignUp()),
+                  );
+                },
+                child: const Text('Get Started'),
+              ),
             ],
           ),
         ),

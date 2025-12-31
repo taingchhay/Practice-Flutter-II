@@ -25,8 +25,8 @@ class _SignUpState extends State<SignUp> {
         title: const Text('Sign Up Page'),
         titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
         backgroundColor: Colors.pinkAccent,
-        ),
-      
+      ),
+
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 100),
         child: Column(
@@ -51,8 +51,9 @@ class _SignUpState extends State<SignUp> {
 
             const SizedBox(height: 50),
             ElevatedButton(
-              onPressed: signUpButton, 
-              child: Text( isSignedUp ? 'Sign In' : 'Sign Up')),
+              onPressed: signUpButton,
+              child: Text(isSignedUp ? 'Sign In' : 'Sign Up'),
+            ),
           ],
         ),
       ),
